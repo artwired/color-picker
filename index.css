@@ -71,7 +71,6 @@ form {
 }
 /* Buttons & Inputs */
 .get-color-btn {
-  width: 123px;
   height: 42px;
   font-size: 0.75rem;
   background-color: #fff;
@@ -132,5 +131,8 @@ input[type="color"] {
   }
   .copied-hex-modal {
     padding: 2em;
+  }
+  .get-color-btn {
+    width: 123px;
   }
 }
