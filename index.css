@@ -72,7 +72,7 @@ form {
 /* Buttons & Inputs */
 .get-color-btn {
   height: 42px;
-  font-size: 0.75rem;
+  font-size: 0.5rem;
   background-color: #fff;
   cursor: pointer;
   border: 1px solid #d1d5db;
@@ -135,5 +135,6 @@ input[type="color"] {
   }
   .get-color-btn {
     width: 123px;
+    font-size: 0.75rem;
   }
 }
