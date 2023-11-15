@@ -1,10 +1,6 @@
 const formEl = document.getElementById("form-el");
-const colorPickerValue = document.getElementById("color-picker").value;
-const newHexValue = colorPickerValue.replace("#", "");
-const colorTypeDropdown = document.getElementById("color-type-dropdown");
-const selectedOption =
-  colorTypeDropdown.options[colorTypeDropdown.selectedIndex].text.toLowerCase();
 
+document.addEventListener("DOMContentLoaded", getColorScheme);
 formEl.addEventListener("submit", getColorScheme);
 
 function getColorScheme(e) {
@@ -23,7 +19,6 @@ function getColorScheme(e) {
   )
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
       let html = ``;
       for (color of data.colors) {
         html += `
