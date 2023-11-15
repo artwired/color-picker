@@ -38,8 +38,17 @@ function getColorScheme(e) {
         for (color of data.colors) {
           if (e.target.dataset.hex === color.hex.value) {
             navigator.clipboard.writeText(color.hex.value);
-            console.log(color.hex.value + " copied to clipboard");
+            document
+              .getElementById("hex-modal-container")
+              .classList.remove("hidden");
           }
+          document.getElementById("copied-hex-modal").textContent =
+            e.target.dataset.hex + " copied to your clipboard";
+          setTimeout(function () {
+            document
+              .getElementById("hex-modal-container")
+              .classList.add("hidden");
+          }, 3000);
         }
       });
     });
