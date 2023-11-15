@@ -77,6 +77,7 @@ form {
   cursor: pointer;
   border: 1px solid #d1d5db;
   border-radius: 4px;
+  color: #374151;
 }
 .color-type-dropdown {
   position: relative;
