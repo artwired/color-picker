@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <title>Color picker</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="form-el">
+          <input type="color" name="color-picker" id="color-picker" />
+          <select
+            name="select"
+            class="color-type-dropdown"
+            id="color-type-dropdown"
+          >
+            <option class="options-menu-item" value="monochrome">
+              Monochrome
+            </option>
+            <option class="options-menu-item" value="monochrome-dark">
+              Monochrome-dark
+            </option>
+            <option class="options-menu-item" value="monochrome-light">
+              Monochrome-light
+            </option>
+            <option class="options-menu-item" value="analogic">Analogic</option>
+            <option class="options-menu-item" value="complement">
+              Complement
+            </option>
+            <option class="options-menu-item" value="analogic-complement">
+              Analogic-Complement
+            </option>
+            <option class="options-menu-item" value="triad">Triad</option>
+            <option class="options-menu-item" value="quad">Quad</option>
+          </select>
+          <button type="submit" class="get-color-btn" id="get-color-btn">
+            Get Color Scheme
+          </button>
+        </form>
+      </header>
+      <div class="colors-container" id="colors-container"></div>
+    </div>
+  </body>
+</html>

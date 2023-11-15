@@ -1,0 +1,96 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #1c1c1c;
+  font-family: "Inter", sans-serif;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Typography */
+.hex-color {
+  font-size: 0.75rem;
+  color: #2b283a;
+}
+/* Layout */
+.container {
+  max-width: 550px;
+  width: 550px;
+  margin: 0 auto;
+  height: 550px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+header {
+  padding: 1.563em 0.875em;
+  background-color: #fff;
+  border-radius: 6px 6px 0 0;
+}
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75em;
+}
+.colors-container {
+  width: 100%;
+  display: flex;
+}
+.color-slot {
+  width: 100%;
+  height: 414px;
+}
+.individual-color-holder {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.hex-color {
+  width: 100%;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Buttons & Inputs */
+.get-color-btn {
+  width: 123px;
+  height: 42px;
+  font-size: 0.75rem;
+  background-color: #fff;
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+}
+.color-type-dropdown {
+  min-width: 300px;
+  position: relative;
+}
+select {
+  width: 100%;
+  height: 42px;
+  background-color: #fff;
+  border: 1px solid var(--gray-300, #d1d5db);
+  border-radius: 6px;
+  padding: 0 0.813em;
+  max-width: 312px;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url(images/Icon.svg);
+  background-repeat: no-repeat;
+  background-position: right 1em top 1em;
+  cursor: pointer;
+}
+input[type="color"] {
+  border: 0.5px solid #d1d5db;
+  height: 42px;
+  width: 61px;
+}
