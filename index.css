@@ -1,17 +1,10 @@
 html,
 body {
   margin: 0;
-  padding: 0;
+  padding: 1em;
   box-sizing: border-box;
   background: #1c1c1c;
   font-family: "Inter", sans-serif;
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 /* Typography */
 .hex-color {
@@ -21,7 +14,6 @@ body {
 /* Layout */
 .container {
   max-width: 550px;
-  width: 550px;
   margin: 0 auto;
   height: 550px;
   background-color: #fff;
@@ -60,9 +52,11 @@ form {
 }
 .hex-modal-container {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 330px;
+  text-align: center;
 }
 .copied-hex-modal {
   padding: 2em;
@@ -86,7 +80,6 @@ form {
   border-radius: 4px;
 }
 .color-type-dropdown {
-  min-width: 300px;
   position: relative;
 }
 select {
@@ -114,4 +107,30 @@ input[type="color"] {
 .hex-color:hover {
   cursor: pointer;
   font-weight: bold;
+}
+@media (min-width: 700px) {
+  body {
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 550px;
+  }
+  .color-type-dropdown {
+    min-width: 300px;
+  }
+  .hex-modal-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+  }
+  .copied-hex-modal {
+    padding: 2em;
+  }
 }
