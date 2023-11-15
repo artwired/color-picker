@@ -23,15 +23,24 @@ function getColorScheme(e) {
   )
     .then((res) => res.json())
     .then((data) => {
+      console.log(data);
       let html = ``;
       for (color of data.colors) {
         html += `
         <div class="individual-color-holder">
             <div class="color-slot" style="background-color: ${color.hex.value}"></div>
-            <div class="hex-color">${color.hex.value}</div>
+            <div class="hex-color" data-hex=${color.hex.value}>${color.hex.value}</div>
         </div>
       `;
       }
       document.getElementById("colors-container").innerHTML = html;
+      document.addEventListener("click", function (e) {
+        for (color of data.colors) {
+          if (e.target.dataset.hex === color.hex.value) {
+            navigator.clipboard.writeText(color.hex.value);
+            console.log(color.hex.value + " copied to clipboard");
+          }
+        }
+      });
     });
 }

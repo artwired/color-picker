@@ -94,3 +94,7 @@ input[type="color"] {
   height: 42px;
   width: 61px;
 }
+.hex-color:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
