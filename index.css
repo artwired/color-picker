@@ -15,7 +15,6 @@ body {
 .container {
   max-width: 550px;
   margin: 0 auto;
-  height: 550px;
   background-color: #fff;
   border-radius: 6px;
 }
@@ -36,7 +35,7 @@ form {
 }
 .color-slot {
   width: 100%;
-  height: 414px;
+  height: 100vh;
 }
 .individual-color-holder {
   display: flex;
@@ -120,6 +119,10 @@ input[type="color"] {
   }
   .container {
     width: 550px;
+    height: 550px;
+  }
+  .color-slot {
+    height: 414px;
   }
   .color-type-dropdown {
     min-width: 300px;
