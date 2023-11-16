@@ -17,6 +17,8 @@ body {
   margin: 0 auto;
   background-color: #fff;
   border-radius: 6px;
+  display: flex;
+  flex-direction: column;
 }
 header {
   padding: 1.563em 0.875em;
@@ -41,6 +43,7 @@ form {
   display: flex;
   flex-direction: column;
   width: 20%;
+  flex-grow: 1;
 }
 .hex-color {
   width: 100%;
@@ -56,6 +59,7 @@ form {
   transform: translateX(-50%);
   width: 330px;
   text-align: center;
+  opacity: 0.9;
 }
 .copied-hex-modal {
   padding: 2em;
@@ -67,6 +71,7 @@ form {
 .hidden {
   transition: opacity 0.1s;
   opacity: 0;
+  display: none;
 }
 /* Buttons & Inputs */
 .get-color-btn {
