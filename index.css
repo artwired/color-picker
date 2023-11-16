@@ -35,7 +35,7 @@ form {
 }
 .color-slot {
   width: 100%;
-  height: 100dvh;
+  height: calc(100vh - 400px);
 }
 .individual-color-holder {
   display: flex;
